@@ -104,6 +104,10 @@ class RateMyProfApi:
                 this will return an empty list.
         """
         # professor_name.replace(' ', '+')
+
+        # use selenium to expand page till all profesor visable then scrap all professor ids from the hrefs on 
+        # each teacher card of class "TeacherCard__StyledTeacherCard-syjs0d-0" to get list of Ids to scrape professor data
+        
         url = 'https://www.ratemyprofessors.com/search/professors/%s?q=%s' % (college.id, professor_name)
         page = requests.get(url)
         data = re.findall(r'"legacyId":(\d+)', page.text)
