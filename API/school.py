@@ -15,6 +15,13 @@ class School:
         self.id = school_id
         self.name = self._get_name()
 
+    def __str__ (self):
+        return "{ " +f'id: {self.id},\n  name: {self.name}'+" }"
+    
+    def __repr__ (self):
+        return self.__str__
+
+
     def _get_name(self):
         url = "https://www.ratemyprofessors.com/campusRatings.jsp?sid=%s" % self.id
         page = requests.get(url)
