@@ -139,9 +139,10 @@ class Professor:
                                   attendance_mandatory=attendance_mandatory))
 
         return ratings
+    
+    def __repr__ (self):
+        return "\n{ " +f'id: {self.id},\n  name: {self.name},\n  courses: {self.courses},\n  department: {self.department},\n  difficulty: {self.difficulty},\n  rating: {self.rating},\n  would_take_again: {self.would_take_again},\n  num_ratings: {self.num_ratings},'+" }"
 
-    def __repr__(self):
-        return self.name
 
     def __lt__(self, other):
         return self.num_ratings < other.num_ratings
@@ -164,6 +165,9 @@ class Course:
         self.professor = professor
         self.name = name
         self.count = count
+    
+    def __repr__ (self):
+        return self.name
 
 
 @total_ordering
@@ -203,6 +207,9 @@ class Rating:
         self.online_class = online_class
         self.credit = credit
         self.attendance_mandatory = attendance_mandatory
+
+    def __repr__ (self):
+        return "\n{ " +f'class_name: {self.class_name},\n  rating: {self.rating},\n  difficulty: {self.difficulty},\n  date: {self.date},\n  comment: {self.comment},\n  take_again: {self.take_again},\n  grade: {self.grade},\n  thumbs_up: {self.thumbs_up},\n  thumbs_down: {self.thumbs_down},\n  online_class: {self.online_class},\n  credit: {self.credit},\n  attendance_mandatory: {self.attendance_mandatory},'+" }"
 
     def __lt__(self, other):
         return self.date > other.date
