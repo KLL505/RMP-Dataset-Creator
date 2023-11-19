@@ -1,8 +1,15 @@
-from ratemyprof_api.ratemyprof_api import RateMyProfApi as RMP
+from API.RateMyProfApi import RateMyProfApi
 
-school  = RMP(1273) 
+RMP = RateMyProfApi()
+
+
+
+school = RMP.get_school_by_name("The University of Texas at Dallas")
 
 Prompt = "Is {Prof} a good professor"
 
-Profs = RMP.search_professor("Jason Smith")
-print(Profs)
+
+
+school = RMP.get_school_by_name("The University of Texas at Dallas")
+Profs = RMP.get_professor_by_school_and_name(school, "Jason Smith") 
+print(Profs.name)
