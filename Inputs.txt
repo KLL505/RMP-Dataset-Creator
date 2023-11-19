@@ -1,0 +1,2 @@
+"Is {Prof} a good professor"
+"Who is the best Professor for {ClassName}" 
