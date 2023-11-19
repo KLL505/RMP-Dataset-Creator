@@ -29,7 +29,7 @@ Answers
 
 
 
-## Websscarping API Documentation:  
+## Webscarping API Documentation:  
 https://github.com/Nobelz/RateMyProfessorAPI
 
 
