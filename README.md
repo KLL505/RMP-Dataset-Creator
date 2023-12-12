@@ -21,15 +21,15 @@ Prompts
 ...  
 
 Answers  
-"The best professor for CS 111 is Jason Smith"
-"The best professor for CS 112 is Bob Jones"
-"The best professor for CS 113 is Jason Smith"
+"The best professor for CS 111 is Jason Smith"  
+"The best professor for CS 112 is Bob Jones"  
+"The best professor for CS 113 is Jason Smith"  
 ...
 
 
 
 
-##Websscarping API Documentation:  
+## Webscarping API Documentation:  
 https://github.com/Nobelz/RateMyProfessorAPI
 
 
